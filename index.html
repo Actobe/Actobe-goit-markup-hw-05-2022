@@ -49,7 +49,7 @@
     <section class="hero">
         <div class="container">
 <h1 class="main-title"><span class="space">Эффективные решения</span>для вашего бизнеса</h1>
-<button class="modal-btn" type="button">Заказать услугу</button>
+<button class="modal-btn" type="button" data-modal-open>Заказать услугу</button>
 </div>
 </section>
 
@@ -103,27 +103,44 @@
     <ul class="pic">
 
     <li class="list">
+        <a class="activity-link link" href="">
+            <div class="activity-info-wrapper">
+                
         <img 
         src="./images/comp-img 1.jpg" 
         alt="Entry data"
         width="370"
         height="294"
         />
+        <p class="activity-overlay">Десктопные приложения</p>
+        </div>
+    </a>
     </li>
     <li class="list">
+        <a class="activity-link link" href="">
+            <div class="activity-info-wrapper">
         <img 
         src="./images/comp-img2.jpg" 
         alt="Entry data"
         width="370"
         height="294"
         />
+        <p class="activity-overlay">Мобильные приложения</p>
+        </div>
+    </a>
     </li>
     <li class="list">
+        <a class="activity-link link" href="">
+            <div class="activity-info-wrapper">
         <img
         src="./images/comp-img3.jpg" 
         alt="Entry data"
         width="370"
         height="294"
+        />
+        <p class="activity-overlay">Дизайнерские решения</p>
+        </div>
+    </a>
     </li>
 </ul>
 </div>
@@ -412,6 +429,16 @@
         </div>
              
 </footer>
-    
+<div class="backdrop is-hidden" data-modal>
+<div class="modal">
+<button type="button" class="modal-close-btn" data-modal-close>
+<svg class="modal-close-icon" width="18" height="18"> 
+<use href="./images/sprite 3.svg#close-icon"></use>
+</svg>
+</button>
+</div>
+</div>
+
+<script src="./js/modal.js"></script>
 </body>
 </html>
