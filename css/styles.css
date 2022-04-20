@@ -206,8 +206,9 @@ color:#2196F3;
     display: block;
     width: 100%;
     height: 4px;
+    border-radius: 2px;
     background: #2196F3;
-border-radius: 2px;
+
 position: absolute;
 left: 0;
 bottom: 0;
@@ -914,7 +915,7 @@ display: block;
     height: 100%;
     width: 100%;
     overflow: auto;
-    transform:translateY(100%);
+    transform:translateY(101%);
     transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .insp-info-wrapper {
