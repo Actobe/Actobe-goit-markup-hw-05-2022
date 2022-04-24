@@ -81,6 +81,21 @@ justify-content: space-between;
     display: flex;
     align-items: center;
 }
+.nav-list-link {
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-mail-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-number-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-mail-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-number-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 
@@ -115,14 +130,6 @@ color: #2196F3;
 fill: #757575;
   }
 
-
-
-
-
-
-
-
-
 .contact-mail {
     display: flex;
     align-items: center;
@@ -148,6 +155,7 @@ fill: #757575;
 .contact-mail-link:focus {
 fill: #2196F3;
 color: #2196F3;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-mail-link {
     fill: #757575;
@@ -168,10 +176,12 @@ margin-right: 30px;
 .contact-number-icon:focus { 
 color: #2196F3;
 fill: #2196F3;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-number-link:hover,
 .contact-number-link:focus {
 color: #2196F3;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -332,19 +342,20 @@ border-radius: 4px;
 display: flex;
 align-items: center;
 text-align: center;
-
+border: none;
 letter-spacing: 0.06em;
 cursor:pointer;
-background-color:#2196F3;
+
 color: #FFFFFF;
 margin: 0 auto;
-
-
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:focus,
 .modal-btn:hover {
-fill: #2196F3; 
+    background: #188ce8;
+
 }
 
 .main-title {
@@ -558,7 +569,16 @@ border-radius: 50%;
 .social-list-link:focus {
 background-color: #2196F3;
 } 
- 
+
+
+ .social-list-link {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
+.social-list-icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 .employees-content-wrapper {
 padding-top: 30px;
 padding-left: 32px;
@@ -575,6 +595,9 @@ letter-spacing: 0.03em;
 color: #212121;
 margin-bottom: 50px;
 }
+
+
+
 .clients {
 padding-top: 94px;
 padding-bottom: 94px;
@@ -600,6 +623,7 @@ height: 92px;
 border: 1px solid #AFB1B8;
 box-sizing: border-box;
 border-radius: 4px;
+transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .pictures {
     display: flex; 
@@ -607,6 +631,7 @@ border-radius: 4px;
 }
 .pictures-item-link {
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .pictures-item-link:hover .pictures-item-icon,
 .pictures-item-link:focus .pictures-item-icon {
@@ -662,7 +687,7 @@ line-height: 1.71;
 /* or 171% */
 letter-spacing: 0.03em;
 color: #FFFFFF;
-
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mail {
     font-family: Roboto;
@@ -678,7 +703,7 @@ color: rgba(255, 255, 255, 0.6);
 }
 .mail {
 display: block;
-
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .phone {
@@ -693,6 +718,7 @@ color: rgba(255, 255, 255, 0.6);
 }
 .phone:focus {
 color: #2196F3;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 .mail:hover, 
@@ -749,7 +775,12 @@ min-width: 230px;
 }
 .social-list-link {
     background-color: #FFFFFF1A;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.social-list-icon2 {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 
 //SECOND PAGE//
 
@@ -774,6 +805,8 @@ cursor:pointer;
     border:none;
     background: #F5F4FA;
 border-radius: 4px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-button:hover,
@@ -892,6 +925,7 @@ margin-right: 30px;
 
 .insp-link {
 display: block;
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .overlay {
@@ -917,6 +951,7 @@ display: block;
     overflow: auto;
     transform:translateY(101%);
     transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .insp-info-wrapper {
     position: relative;
@@ -1039,7 +1074,8 @@ color: #2196F3;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-   }
+    
+}
    .backdrop.is-hidden {
     opacity: 0;
     visibility: hidden;
