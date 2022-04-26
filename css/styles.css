@@ -155,7 +155,6 @@ fill: #757575;
 .contact-mail-link:focus {
 fill: #2196F3;
 color: #2196F3;
-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-mail-link {
     fill: #757575;
@@ -572,7 +571,7 @@ background-color: #2196F3;
 
 
  .social-list-link {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1)
  }
 .social-list-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -612,6 +611,7 @@ color: #AFB1B8;
 }
 .pictures-item-icon {
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .pictures-item-link {
@@ -629,10 +629,7 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: flex; 
     justify-content: space-between;  
 }
-.pictures-item-link {
-    fill: #AFB1B8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 .pictures-item-link:hover .pictures-item-icon,
 .pictures-item-link:focus .pictures-item-icon {
 fill: #2196F3;
@@ -775,7 +772,7 @@ min-width: 230px;
 }
 .social-list-link {
     background-color: #FFFFFF1A;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 .social-list-icon2 {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -814,7 +811,8 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color: #FFFFFF;
 background-color: #2196F3;
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-border-radius: 4px;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-list-button-all {
     font-family: 'Roboto', sans-serif;
@@ -834,6 +832,8 @@ border-radius: 4px;
         background: #2196F3;
     border-radius: 4px;
     color: #FFFFFF;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
